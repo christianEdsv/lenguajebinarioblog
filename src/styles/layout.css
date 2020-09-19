@@ -1,0 +1,13 @@
+.container{
+    background-color: #FBFBFB;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #1e2022;
+}
