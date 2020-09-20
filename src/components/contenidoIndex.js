@@ -39,7 +39,7 @@ return (
             <Avatar />
         </Contenedor>
     </>
-);
+)
 }
  
 export default ContenidoIndex;
