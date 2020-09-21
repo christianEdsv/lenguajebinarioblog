@@ -4,34 +4,6 @@ import { Link } from "gatsby";
 import Image from "gatsby-image";
 import styled from 'styled-components';
 
-const Header = () => {
-
-const data = useStaticQuery(graphql`
-query {
-    logo: file(relativePath: {eq: "logo.png"}){
-        childImageSharp{
-        fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
-        }
-      } 
-    }
-  }
-`)
-
-
-return (
-        <Cabecera>
-            <Img><Link to="/."><Logo fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
-            <Menu>
-            <Link to="/."><Lista>Inicio</Lista></Link>
-            <Link to="/blog/"><Lista>Blog</Lista></Link>
-            </Menu>
-        </Cabecera>
-    )
-}
-
-export default Header;
-
 const Cabecera = styled.header`
     display: flex;
     flex-direction: row;
@@ -65,4 +37,32 @@ const Img = styled.div`
 `;
 const Logo = styled(Image)`
     width: 60px;
-`
+`;
+
+const Header = () => {
+
+const data = useStaticQuery(graphql`
+query {
+    logo: file(relativePath: {eq: "logo.png"}){
+        childImageSharp{
+        fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+        }
+      } 
+    }
+  }
+`)
+
+
+return (
+        <Cabecera>
+            <Img><Link to="/."><Logo fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
+            <Menu>
+            <Link to="/."><Lista>Inicio</Lista></Link>
+            <Link to="/blog/"><Lista>Blog</Lista></Link>
+            </Menu>
+        </Cabecera>
+    )
+}
+
+export default Header;
