@@ -35,7 +35,7 @@ const Lista = styled.li`
 const Img = styled.div`
     width: 60px;
 `;
-const Logo = styled(Image)`
+const Logo = styled(Link)`
     width: 60px;
 `;
 
@@ -56,7 +56,9 @@ query {
 
 return (
         <Cabecera>
-            <Img><Link to="/."><Logo fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
+            <div>
+                <Img><Logo to="/."><Image fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Logo></Img>
+            </div>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
