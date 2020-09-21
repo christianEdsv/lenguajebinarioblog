@@ -1,6 +1,4 @@
 import React from 'react';
-import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faReadme } from "@fortawesome/free-brands-svg-icons"
@@ -9,23 +7,11 @@ import Avatar from './avatar';
 
 const ContenidoIndex = () => {
 
-const data = useStaticQuery(graphql`
-    query {
-    character: file(relativePath: {eq: "character.png"}){
-        childImageSharp{
-        fluid(maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-        }
-        } 
-    }
-    }
-`)
-
 return (
     <>
         <div className='contenedor'>
         <div className='sitio'>
-            <Image className='img' fluid={data.character.childImageSharp.fluid} alt="Personaje" />
+            
             <h1 className='titulo'>Lenguaje binario</h1>
             <p className='binario'>01000010 01101001 01100101 01101110 01110110 01100101 01101110 01101001 01100100 01101111 00101111 01100001</p>
         </div>
