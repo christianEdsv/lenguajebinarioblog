@@ -21,7 +21,7 @@ query {
 
 return (
         <Cabecera>
-            <Img><Link to="/."><Image fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
+            
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
@@ -59,7 +59,4 @@ const Lista = styled.li`
         text-decoration-color: #fff;
         background-color: #ed6663;
     }
-`;
-const Img = styled.div`
-    width: 60px;
 `;
