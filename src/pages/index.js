@@ -9,7 +9,7 @@ const IndexPage = () => {
       <SEO title="Inicio" />
       <ContenidoIndex />
     </Layout>
-  )
+  );
 }
 
 export default IndexPage;
