@@ -21,7 +21,7 @@ query {
 
 return (
         <Cabecera>
-            <Img><Link to="/."><Image fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
+            <Img><Link to="/."><Logo fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Link></Img>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
@@ -63,3 +63,6 @@ const Lista = styled.li`
 const Img = styled.div`
     width: 60px;
 `;
+const Logo = styled(Image)`
+    width: 60px;
+`
