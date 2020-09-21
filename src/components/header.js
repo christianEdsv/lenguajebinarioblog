@@ -4,6 +4,12 @@ import { Link } from "gatsby";
 import Image from "gatsby-image";
 import styled from 'styled-components';
 
+const Img = styled.div`
+    width: 60px;
+`;
+const Logo = styled(Link)`
+    width: 60px;
+`;
 const Cabecera = styled.header`
     display: flex;
     flex-direction: row;
@@ -31,12 +37,6 @@ const Lista = styled.li`
         text-decoration-color: #fff;
         background-color: #ed6663;
     }
-`;
-const Img = styled.div`
-    width: 60px;
-`;
-const Logo = styled(Link)`
-    width: 60px;
 `;
 
 const Header = () => {

@@ -28,9 +28,9 @@ const data = useStaticQuery(graphql`
                 <p>Hola soy Christian desarrollador web con residencia en El Salvador, gracias por visitar mi web, puedes cotactarme en mis redes sociales.
                 </p>
             <div className='iconos'>
-                <a className='twitter' href="https://twitter.com/christianEdSV" target="_blank"><FontAwesomeIcon icon={faTwitter} /></a>
-                <a className='git' href="https://github.com/christianEdsv" target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
-                <a className='linkedin' href="https://www.linkedin.com/in/christian-hernandez-531bb494/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a>
+                <a className='twitter' href="https://twitter.com/christianEdSV" target="_blank" rel="noopener"><FontAwesomeIcon icon={faTwitter} /></a>
+                <a className='git' href="https://github.com/christianEdsv" target="_blank" rel="noopener"><FontAwesomeIcon icon={faGithub} /></a>
+                <a className='linkedin' href="https://www.linkedin.com/in/christian-hernandez-531bb494/" target="_blank" rel="noopener"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
             </div>
         </div>

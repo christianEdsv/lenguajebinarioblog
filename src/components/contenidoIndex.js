@@ -33,7 +33,7 @@ return (
             <p className='parrafo'>Hola gracias por visitar la web</p>
             <p className='parrafo'>Lenguaje binario es un blog en español donde hablamos sobre <b>tecnología, programación, videojuegos, literatura y todo lo relacionado con el mundo nerd. </b>
             Dentro de cada categoría podrás encontrar artículos de opinión, análisis, buenas prácticas, historia, vida diaria, entre otros temas.</p>
-            <p className='parrafo'>Todos los articulos son escritos por <a className='enlace' href="https://twitter.com/christianEdSV" target="_blank">Christian Hernandez</a></p>
+            <p className='parrafo'>Todos los articulos son escritos por <a className='enlace' href="https://twitter.com/christianEdSV" target="_blank" rel="noopener">Christian Hernandez</a></p>
         </div>
         <Link className='boton' to="/blog/"><FontAwesomeIcon className='icono' icon={faReadme} size="xs"/>Ir a Blog</Link>
             <Avatar />
