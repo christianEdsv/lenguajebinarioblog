@@ -3,13 +3,13 @@ import React from 'react';
 import { Link } from "gatsby";
 
 const Titulo = styled.h1`
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     margin: 0;
     padding: 0;
 `;
 const Uno = styled.b`
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     color: #ed6663;
 `;
