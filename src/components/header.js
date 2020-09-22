@@ -6,10 +6,10 @@ import Image from "gatsby-image";
 
 
 const Img = styled.div`
-    width: 60px;
+    width: 60px !important;
 `;
 const Logo = styled(Link)`
-    width: 60px;
+    width: 60px !important;
 `;
 const Cabecera = styled.header`
     display: flex;
@@ -25,7 +25,7 @@ const Cabecera = styled.header`
 const Menu = styled.ul`
     padding: 0;
     list-style: none;
-    display: flex;
+    display: flex !important;
 `;
 const Lista = styled.li`
     font-family: 'PT Serif', serif;
