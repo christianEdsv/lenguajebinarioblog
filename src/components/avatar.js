@@ -1,7 +1,7 @@
+import "../styles/avatar.css";
 import React from 'react';
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
-import "../styles/avatar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 

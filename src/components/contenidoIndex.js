@@ -1,11 +1,12 @@
+import "../styles/contenidoIndex.css";
+import Avatar from './avatar';
 import React from 'react';
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faReadme } from "@fortawesome/free-brands-svg-icons"
-import "../styles/contenidoIndex.css";
-import Avatar from './avatar';
+
 
 const ContenidoIndex = () => {
 

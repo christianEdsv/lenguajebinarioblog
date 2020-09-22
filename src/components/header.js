@@ -1,8 +1,16 @@
+import styled from 'styled-components';
 import React from 'react';
 import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
-import styled from 'styled-components';
+import Image from "gatsby-image";
 
+
+const Img = styled.div`
+    width: 60px;
+`;
+const Logo = styled(Link)`
+    width: 60px;
+`;
 const Cabecera = styled.header`
     display: flex;
     flex-direction: row;
@@ -49,7 +57,9 @@ query {
 
 return (
         <Cabecera>
-            <h1>Lenguaje binario</h1>
+            <div>
+                <Img><Logo to="/."><Image fluid={data.logo.childImageSharp.fluid} alt="Logo" /></Logo></Img>
+            </div>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
