@@ -58,7 +58,7 @@ query {
 
 return (
         <Cabecera>
-            <Titulo>0<Uno>1</Uno></Titulo>
+            <Titulo>Lenguaje<Uno>binario</Uno></Titulo>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
