@@ -27,7 +27,6 @@ return (
         <div className='contenedor'>
         <div className='sitio'>
             <Image className='img' fluid={data.character.childImageSharp.fluid} alt="Personaje" />
-            <h1 className='titulo'>Lenguaje binario</h1>
             <p className='binario'>01000010 01101001 01100101 01101110 01110110 01100101 01101110 01101001 01100100 01101111 00101111 01100001</p>
         </div>
         <div className='contenido'>
