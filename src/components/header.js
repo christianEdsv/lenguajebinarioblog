@@ -46,7 +46,7 @@ const data = useStaticQuery(graphql`
 query {
     logo: file(relativePath: {eq: "logo.png"}){
         childImageSharp{
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
         }
       } 
