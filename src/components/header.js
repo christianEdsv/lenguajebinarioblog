@@ -6,8 +6,12 @@ import { Link } from "gatsby";
 const Titulo = styled.h1`
     font-size: 30px;
     font-weight: 700;
-`
-
+`;
+const Uno = styled.spam`
+    font-size: 30px;
+    font-weight: 700;
+    color: #ed6663;
+`;
 const Cabecera = styled.header`
     display: flex;
     flex-direction: row;
@@ -54,7 +58,7 @@ query {
 
 return (
         <Cabecera>
-            <h1>01</h1>
+            <Titulo>0<Uno>1</Uno></Titulo>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
