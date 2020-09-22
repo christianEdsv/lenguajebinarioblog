@@ -4,8 +4,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 
 const Titulo = styled.h1`
-    font-size: 40px;
-`;
+    font-size: 30px;
+    font-weight: 700;
+`
+
 const Cabecera = styled.header`
     display: flex;
     flex-direction: row;
@@ -52,7 +54,7 @@ query {
 
 return (
         <Cabecera>
-            <h1>Lenguaje binario</h1>
+            <h1>01</h1>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
