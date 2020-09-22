@@ -58,7 +58,7 @@ query {
 
 return (
         <Cabecera>
-            <Link className='boton' to="/."><Titulo>Lenguaje<Uno>binario</Uno></Titulo></Link>
+            <Link to="/."><Titulo>Lenguaje<Uno>binario</Uno></Titulo></Link>
             <Menu>
             <Link to="/."><Lista>Inicio</Lista></Link>
             <Link to="/blog/"><Lista>Blog</Lista></Link>
