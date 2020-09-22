@@ -7,7 +7,7 @@ const Titulo = styled.h1`
     font-size: 30px;
     font-weight: 700;
 `;
-const Uno = styled.p`
+const Uno = styled.b`
     font-size: 30px;
     font-weight: 700;
     color: #ed6663;
