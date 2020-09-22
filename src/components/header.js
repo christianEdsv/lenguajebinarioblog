@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import React from 'react';
-import { graphql, useStaticQuery } from "gatsby";
 import { Link } from "gatsby";
 
 const Titulo = styled.h1`
     font-size: 30px;
     font-weight: 700;
+    margin: 0;
+    padding: 0;
 `;
 const Uno = styled.b`
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     color: #ed6663;
 `;
@@ -42,19 +43,6 @@ const Lista = styled.li`
 `;
 
 const Header = () => {
-
-const data = useStaticQuery(graphql`
-query {
-    logo: file(relativePath: {eq: "logo.png"}){
-        childImageSharp{
-        fluid(maxWidth: 100) {
-            ...GatsbyImageSharpFluid
-        }
-      } 
-    }
-  }
-`)
-
 
 return (
         <Cabecera>
