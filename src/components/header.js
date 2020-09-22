@@ -24,7 +24,7 @@ const Cabecera = styled.header`
 `;
 const Menu = styled.ul`
     padding: 0;
-    list-style: none;
+    list-style: none !important;
     display: flex !important;
 `;
 const Lista = styled.li`
