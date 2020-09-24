@@ -48,8 +48,8 @@ return (
         <Cabecera>
             <Link to="/."><Titulo>Lenguaje<Uno>binario</Uno></Titulo></Link>
             <Menu>
-            <Link to="/."><Lista>Inicio</Lista></Link>
-            <Link to="/blog/"><Lista>Blog</Lista></Link>
+            <Lista><Link to="/.">Inicio</Link></Lista>
+            <Lista><Link to="/blog/">Blog</Link></Lista>
             </Menu>
         </Cabecera>
     )
