@@ -26,8 +26,8 @@ const Cabecera = styled.header`
 `;
 const Menu = styled.ul`
     padding: 0;
-    list-style: none !important;
-    display: flex !important;
+    list-style: none;
+    display: flex;
 `;
 const Lista = styled.li`
     font-family: 'PT Serif', serif;
@@ -48,8 +48,8 @@ return (
         <Cabecera>
             <Link to="/."><Titulo>Lenguaje<Uno>binario</Uno></Titulo></Link>
             <Menu>
-            <Lista><Link to="/.">Inicio</Link></Lista>
-            <Lista><Link to="/blog/">Blog</Link></Lista>
+            <Link to="/."><Lista>Inicio</Lista></Link>
+            <Link to="/blog/"><Lista>Blog</Lista></Link>
             </Menu>
         </Cabecera>
     )
