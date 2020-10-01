@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.titulo{
+    text-align: center;
+    color: #1e2022;
+    font-size: 40px;
+}
+@media (max-width: 740px) {
+    .contenedor{
+        flex-flow: column nowrap;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+}
