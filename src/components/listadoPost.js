@@ -1,8 +1,8 @@
-import "../styles/listadoPost.css";
 import React, { useState, useEffect } from 'react';
 import usePost from '../hooks/usePost';
 import PostPriview from './postPreview';
 import useFiltro from '../hooks/useFiltro';
+import styled from 'styled-components';
 
 const ListadoPost = () => {
 
@@ -24,18 +24,37 @@ const ListadoPost = () => {
 
     return (
         <>
-        <h1 className='titulo'>Blog</h1>
+        <Titulo>Blog</Titulo>
         {FiltroUI() }
-            <div className='contenedor'>
+            <Contenedor>
                 { postFiltrados.map (post =>(
                     <PostPriview
                         key={post.titulo}
                         post={post}
                     />
                 ))}
-            </div>
+            </Contenedor>
         </>
      );
 }
  
 export default ListadoPost;
+
+const Contenedor = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    @media (max-width: 740px) {
+        flex-flow: column nowrap;
+    }
+`;
+const Titulo = styled.h1`
+    text-align: center;
+    color: #1e2022;
+    font-size: 40px;
+
+    @media (max-width: 780px) {
+        font-size: 25px;
+    }
+`;
